@@ -6,7 +6,6 @@ from qdrant_client.models import (
     Filter,
     FieldCondition,
     MatchValue,
-    SearchRequest,
 )
 from openai import AsyncOpenAI
 from app.core.config import settings
@@ -113,9 +112,9 @@ class VectorStore:
                 ]
             )
 
-        results = await self.client.search(
+        results = await self.client.query_points(
             collection_name=self.collection,
-            query_vector=query_embedding,
+            query=query_embedding,
             limit=top_k,
             query_filter=search_filter,
             score_threshold=settings.RAG_SIMILARITY_THRESHOLD,
@@ -129,7 +128,7 @@ class VectorStore:
                 "title": hit.payload.get("title", ""),
                 "score": hit.score,
             }
-            for hit in results
+            for hit in results.points
         ]
 
     async def delete_collection(self):
