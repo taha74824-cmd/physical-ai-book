@@ -11,10 +11,10 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://YOUR_GITHUB_USERNAME.github.io',
+  url: 'https://taha74824-cmd.github.io',
   baseUrl: '/physical-ai-book/',
 
-  organizationName: 'YOUR_GITHUB_USERNAME',
+  organizationName: 'taha74824-cmd',
   projectName: 'physical-ai-book',
   trailingSlash: false,
 
@@ -67,7 +67,7 @@ const config: Config = {
           label: 'Read Book',
         },
         {
-          href: 'https://github.com/YOUR_GITHUB_USERNAME/physical-ai-book',
+          href: 'https://github.com/taha74824-cmd/physical-ai-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,7 +99,7 @@ const config: Config = {
           items: [
             {label: 'Safety & Ethics', to: '/chapter-09-safety-ethics/overview'},
             {label: 'Future of Physical AI', to: '/chapter-10-future/overview'},
-            {label: 'GitHub', href: 'https://github.com/YOUR_GITHUB_USERNAME/physical-ai-book'},
+            {label: 'GitHub', href: 'https://github.com/taha74824-cmd/physical-ai-book'},
           ],
         },
       ],
