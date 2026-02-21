@@ -3,7 +3,7 @@ import styles from "./ChatBot.module.css";
 
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://YOUR_BACKEND_URL/api/v1"
+    ? "https://physical-ai-book-production-c6d2.up.railway.app/api/v1"
     : "http://localhost:8000/api/v1";
 
 interface Source {
