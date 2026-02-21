@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build outputs
+book/build/
+book/.docusaurus/
+
+# Environment files (NEVER commit these)
+.env
+backend/.env
+*.env.local
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Python cache
+*.egg-info/
+dist/

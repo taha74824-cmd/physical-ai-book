@@ -1,0 +1,60 @@
+/* Physical AI Book - Global Styles */
+
+:root {
+  /* Primary: Deep Blue (technology, intelligence) */
+  --ifm-color-primary: #1a6eb5;
+  --ifm-color-primary-dark: #175fa0;
+  --ifm-color-primary-darker: #155a97;
+  --ifm-color-primary-darkest: #114a7c;
+  --ifm-color-primary-light: #1d7dca;
+  --ifm-color-primary-lighter: #1f82d3;
+  --ifm-color-primary-lightest: #3591db;
+  --ifm-code-font-size: 93%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 700;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4da8e8;
+  --ifm-color-primary-dark: #2e9ae4;
+  --ifm-color-primary-darker: #1f93e1;
+  --ifm-color-primary-darkest: #0d7cc7;
+  --ifm-color-primary-light: #6cb5ec;
+  --ifm-color-primary-lighter: #7bbcee;
+  --ifm-color-primary-lightest: #a9d5f4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Better reading experience for book content */
+.markdown {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.markdown h1 {
+  font-size: 2.2em;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 12px;
+}
+
+.markdown h2 {
+  font-size: 1.65em;
+  margin-top: 2em;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 8px;
+}
+
+.markdown table {
+  font-size: 14px;
+}
+
+/* Code blocks */
+.prism-code {
+  font-size: 13px;
+}
+
+/* Article max width for readability */
+article .markdown {
+  max-width: 800px;
+}

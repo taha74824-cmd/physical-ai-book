@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-docusaurus@latest book classic --typescript --skip-install)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd /c \"where npm\")",
+      "Bash(powershell -command \"Get-Command npm | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -command \"Get-Command node | Select-Object -ExpandProperty Source\")",
+      "Bash(node start-book.mjs:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(xargs:*)",
+      "Bash(winget install:*)"
+    ]
+  }
+}
